@@ -1,17 +1,17 @@
 
 # whatsapp-based-food-ordering-system-1
 
-# 🍔 WhatsApp-Based Food Ordering System
+# WhatsApp-Based Food Ordering System
 
 A full-stack food ordering platform that allows customers to place orders via WhatsApp and enables restaurant staff to manage menus and orders through a web dashboard.
 
 Built as part of the Intern Coding Challenge.
 
----
 
-## 🚀 Features
 
-### 📦 Backend (FastAPI)
+##  Features
+
+###  Backend (FastAPI)
 
 * Menu management (create, update, enable/disable items)
 * Order creation via WhatsApp
@@ -20,21 +20,21 @@ Built as part of the Intern Coding Challenge.
 * OpenAPI documentation
 * Unit tests
 
-### 💬 WhatsApp Integration
+###  WhatsApp Integration
 
 * Order confirmation messages
 * Status update notifications
 * Cancellation alerts
   (Using Twilio / WhatsApp Business API)
 
-### 🖥 Frontend (ReactJS)
+###  Frontend (ReactJS)
 
 * Menu management dashboard
 * Active order tracking
 * Update order status
 * Success & error notifications
 
-### 🧰 Python SDK
+###  Python SDK
 
 Generated using OpenAPI Generator:
 
@@ -44,28 +44,10 @@ Generated using OpenAPI Generator:
 * `list_orders()`
 * `get_order_by_id()`
 
-### ⚙️ Automation Scripts
 
-* One-command environment setup
-* One-command project runner
 
----
 
-## 🏗 Project Structure
-
-```
-.
-├── backend/        # FastAPI application
-├── frontend/       # React dashboard
-├── sdk/            # Generated Python SDK
-├── scripts/        # Setup & run scripts
-├── tests/          # Backend unit tests
-└── README.md
-```
-
----
-
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -88,30 +70,20 @@ Generated using OpenAPI Generator:
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 * Python 3.10+
 * Node.js 18+
-* npm / yarn
+* npm 
 * Git
-* Twilio / WhatsApp API credentials
+* Twilio 
 
 ---
 
-## 🔑 Environment Variables
-
-Create a `.env` file inside `backend/`:
-
-```
-TWILIO_ACCOUNT_SID=your_sid
-TWILIO_AUTH_TOKEN=your_token
-TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
-DATABASE_URL=sqlite:///./app.db
-```
 
 ---
 
-## 🧪 Backend Setup
+##  Backend Setup
 
 ```bash
 cd backend
@@ -122,7 +94,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### ▶ Run backend
+###  Run backend
 
 ```bash
 uvicorn main:app --reload
@@ -142,7 +114,7 @@ http://localhost:8000/openapi.json
 
 ---
 
-## 💻 Frontend Setup
+##  Frontend Setup
 
 ```bash
 cd frontend
@@ -158,7 +130,7 @@ http://localhost:3000
 
 ---
 
-## 🧰 Generate Python SDK
+##  Generate Python SDK
 
 ```bash
 openapi-generator-cli generate \
@@ -184,7 +156,7 @@ print(orders)
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 cd backend
@@ -193,15 +165,15 @@ pytest
 
 ---
 
-## ⚡ Automation Scripts
+##  Automation Scripts
 
-### 🔹 Setup everything
+###  Setup everything
 
 ```bash
 ./scripts/setup.sh
 ```
 
-### 🔹 Run full system
+###  Run full system
 
 ```bash
 ./scripts/run.sh
@@ -209,7 +181,7 @@ pytest
 
 ---
 
-## 📲 WhatsApp Order Flow
+##  WhatsApp Order Flow
 
 1. Customer sends order on WhatsApp
 2. Backend validates menu items
@@ -223,6 +195,4 @@ pytest
 
 
 
-## 📄 License
 
-This project is for assessment purposes.
