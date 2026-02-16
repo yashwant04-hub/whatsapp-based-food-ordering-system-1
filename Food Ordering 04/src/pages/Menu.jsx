@@ -78,7 +78,7 @@ const Menu = () => {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
-      alert("Item added ✅");
+      alert("Item added ");
 
       setForm({
         name: "",
